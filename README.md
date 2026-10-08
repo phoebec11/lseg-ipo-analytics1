@@ -71,7 +71,7 @@ The source file starts in June 1995. 1995 to 2004 is excluded, not unavailable. 
 **The LSEG data is not included in this repository**, because I have not confirmed that LSEG permits redistribution. This also applies to the cleaned file derived from it (`new_issues.csv`), so `load_db.py` and the notebook cannot be re-run from a fresh clone. The notebook is saved with its outputs and charts, so the results can be read without re-running it. The cleaning steps are described below.
 
 
-| File                            | What it is                                                                                                                                           | Rows |
+| File                            | What it is                                                                                                                                           | Notebook rows |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | `sector_map.csv`                | The industry group given to each FTSE sector label in the data (95 labels, plus one for blank sectors)                                               | 96   |
 | `manual_sector_review.csv`      | The 107 listings that had no FTSE sector, each with an industry group assigned with AI assistance and checked by me, and the source used as evidence | 107  |
