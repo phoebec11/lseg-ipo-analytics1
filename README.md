@@ -3,20 +3,16 @@
 An SQL and Python analysis of 2,282 IPOs on the London Stock Exchange (LSE) from 2005 to 2025: how many there were, which market they listed on, which industries they came from, how big they were and how much new money they raised. The data is cleaned in Excel, validated in Python, loaded into SQLite and queried with SQL from a Jupyter notebook.
 
 
-
 ## Why this personal project?
 
 I am interested in personal investing, and in the UK stock market in particular. Before looking at individual shares, I wanted to understand the supply of new UK-listed companies: how many list, on which market, in which industries, how big they are and how much they raise. That tells me what a private investor can realistically find among new listings, and how much of it is small, concentrated or cyclical. It also shows which industries have been bringing companies to market at different points in the cycle, which is a way to learn about industries.
 
 This is background, not a stock-picking signal. The data has no share prices, returns, valuations or trading volumes, so it says nothing about how the companies performed after they listed. Nothing here is investment advice.
 
-**What this can and cannot show.** It describes IPOs in London only. It cannot show whether London is a leading European listing venue, because that needs IPO data from other exchanges and this dataset has none. A fall in London IPOs could reflect a global slowdown, companies listing elsewhere, or both.
-
-
 
 ## Why 2005 to 2025?
 
-2005 to 2025 is a starting point: a 21-year window that covers the pre-crisis boom (2005 to 2007), the financial crisis, the 2010s, the pandemic and the recent slump. 2025 is the last complete year (2026 is excluded because the year is incomplete).
+I chose 2005 to 2025 for the  is a 21-year window that covers the pre-crisis boom (2005 to 2007), the financial crisis, the 2010s, the pandemic and the recent slump. 2025 is the last complete year (2026 is excluded because the year is incomplete).
 
 The source file starts in June 1995. 1995 to 2004 is excluded, not unavailable. From 2005 the issue types and industry groups are validated: LSEG uses 13 raw issue types across the whole file (11 from 2005), each maps to exactly one category from 2005 (checked by `load_db.py`), and every listing has an industry group. The earlier years have not been validated in the same way yet, and 437 listings from 1995 to 2004 carry 29 older sector names that are not mapped to an industry group (`CHECK - unmapped`). Extending the window back to 1995 is the first item of future work.
 
@@ -106,7 +102,7 @@ I used Claude (Anthropic's AI assistant) in this project, specifically for the f
 - **Labelling the 107 blank-sector listings:** Claude assigned each company an industry group. I told it which sources to use (the company's website, its LSE page or Wikipedia) and I checked every one against its source. The sources and the other group considered are recorded in `manual_sector_review.csv`.
 - In `sector_map.csv` : Claude helped me map the 95 sector labels to 9 groups. My instruction was: "match the sector labels to the 9 types". 
 - In`load_db.py`**:** This is my first time validating data types and completeness, so I used Claude as a learning tool: to understand what to check and to give feedback on my ideas for how to structure it, for example building each step as a function and adding logs. 
-- **Notebook and README.** Claude helped revise the notebook and write and edit the README text. The Excel cleaning, the choice of questions and the original SQL queries are original.
+- **Notebook and README** Claude helped revise the notebook and write and edit the README text. The Excel cleaning, the choice of questions and the original SQL queries are original.
 
 
 
@@ -114,10 +110,10 @@ I used Claude (Anthropic's AI assistant) in this project, specifically for the f
 
 ### 1. Cleaning in Excel
 
-- **Issue types harmonised.** The raw LSEG issue types (13 across the whole file, 11 from 2005) were mapped onto 4 categories with `XLOOKUP`. For example, `New Company Placing`, `Offer for Subscription - New Company` and `International Offering (GDR)` all become `New admission`. The mapping is validated from 2005 (see Why 2005 to 2025).
-- **Industry groups assigned.** Each FTSE sector label in the data (95 distinct labels) was mapped to one of nine broad industry groups, based on the sector name, plus a small `Non-company security` category. The mapping is in `sector_map.csv`.
-- **Missing sectors labelled.** 107 listings had no FTSE sector. Each was assigned an industry group using a source I specified, with what the company does and the URL recorded in `manual_sector_review.csv` (see How AI was used).
-- **Pivot tables** cross-checked counts by year, month, market and sector before export.
+- **Unifying issue types** The raw LSEG issue types (13 across the whole file, 11 from 2005) were mapped onto 4 categories with `XLOOKUP`. For example, `New Company Placing`, `Offer for Subscription - New Company` and `International Offering (GDR)` all become `New admission`. The mapping is validated from 2005 (see Why 2005 to 2025).
+- **Assigning broader industry groups to IPOs** Each FTSE sector label in the data (95 distinct labels) was mapped to one of nine broad industry groups, based on the sector name, plus a small `Non-company security` category. The mapping is in `sector_map.csv`.
+- **Labelling missing sector data** 107 listings had no FTSE sector. Each was assigned an industry group using a source I specified, with what the company does and the URL recorded in `manual_sector_review.csv` (see How AI was used).
+- **Pivot tables descriptive statistics** Cross-checked counts by year, month, market and sector before export.
 
 
 
@@ -125,14 +121,14 @@ I used Claude (Anthropic's AI assistant) in this project, specifically for the f
 
 The database is built only if every check passes:
 
-- **Shape of the export.** All required columns are present, there are exactly 6,251 rows, and no duplicate listings.
+- **Shape of the export** All required columns are present, there are exactly 6,251 rows, and no duplicate listings.
 - **Excel export artefacts repaired:**
   - 1,786 empty columns are dropped, after confirming they hold no data.
   - Dates are parsed and stored as `yyyy-mm-dd`.
   - In money columns, thousands separators are removed and `-` becomes NULL.
-- **Known values only.** Market, IPO flag and industry group contain only expected values, so a misspelling cannot silently drop rows from a filter.
-- **One category per issue type.** Each raw issue type must map to exactly one harmonised category. This catches a lookup applied to the wrong rows.
-- **The published lookups match the data.** The industry group in the data agrees with `sector_map.csv` for every listing that has a sector label. Every listing in `manual_sector_review.csv` matches one row, carries the group used in the data and has an evidence URL, and every blank-sector listing in the analysis is covered.
+- **Filtering known values only** Market, IPO flag and industry group contain only expected values, so a misspelling cannot silently drop rows from a filter.
+- **One category per issue type** Each raw issue type must map to exactly one harmonised category. This catches a lookup applied to the wrong rows.
+- **The published lookups match the data** The industry group in the data agrees with `sector_map.csv` for every listing that has a sector label. Every listing in `manual_sector_review.csv` matches one row, carries the group used in the data and has an evidence URL, and every blank-sector listing in the analysis is covered.
 
 It writes to a temporary file and swaps it into place, so a failed run leaves the existing database untouched. A `load_metadata` table records the SHA-256 hash of each source file, so every result can be traced to an exact export.
 
@@ -151,7 +147,6 @@ WHERE year >= 2005
   AND market IN ('UK Main Market', 'International Main Market', 'AIM');
 ```
 
-- **Why 2005?** See Why 2005 to 2025 above.
 - **Why these three markets?** The Specialist Fund Market and the Professional Securities Market are specialist segments rather than the Main Market and AIM. 20 of the 24 Specialist Fund Market listings are in investment-fund sectors. Excluding both removes 38 of 2,320 rows (1.6%) and barely moves the results (AIM's share of 2005 to 2007 IPOs goes from 75% to 76%).
 - LSEG's `IPO` flag column, which excludes reverse takeovers, introductions and transfers between markets. `New admission` covers 2,133 new company placings, 135 international GDR offerings and 14 offers for subscription.
 
