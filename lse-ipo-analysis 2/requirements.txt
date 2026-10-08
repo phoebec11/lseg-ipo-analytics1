@@ -1,0 +1,6 @@
+# Tested with Python 3.13. For an exact record, run `pip freeze` in your environment and pin these.
+pandas>=2.2
+matplotlib>=3.8
+jupysql==0.11.1
+sqlalchemy>=2.0
+jupyterlab
