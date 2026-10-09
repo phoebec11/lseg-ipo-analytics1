@@ -33,10 +33,10 @@ The source file starts in June 1995. 1995 to 2004 is excluded, not unavailable. 
 
 *Opening value is missing for 15 of the 108 IPOs in 2022 to 2025, mostly large ones, so the true median is probably £21m to £25m.
 
-1. **Volume collapsed.** 46% of all IPOs since 2005 came in 2005 to 2007. 2024 had 17, the lowest year. 2022 to 2025 runs at 8% to 42% of the IPO rate of any earlier baseline period, so the fall does not depend on which period you compare with.
-2. **The typical IPO is smaller.** The median opening value fell from £66.8m in the 2010s to about £20m to £25m, and total new money in 2022 to 2025 (£4.2bn) was about a seventh of 2006 alone (£28.8bn).
-3. **AIM gave ground to the Main Market.** AIM's share of IPOs fell from 76% to 42% while the Main Market's rose from 17% to 47%.
-4. **The industry mix held; the volume did not.** Financials & Real Estate was 42% of IPOs in both 2005 to 2007 and 2022 to 2025, but that is 147 IPOs a year then and 11 now. Basic Materials rose to 18.5% and Health Care peaked at 10.2% in 2020 to 2021, then fell to 3.7%.
+1. **Volume collapsed** 46% of all IPOs since 2005 came in 2005 to 2007. 2024 had 17, the lowest year. 2022 to 2025 runs at 8% to 42% of the IPO rate of any earlier baseline period, so the fall does not depend on which period you compare with.
+2. **The typical IPO is smaller** The median opening value fell from £66.8m in the 2010s to about £20m to £25m, and total new money in 2022 to 2025 (£4.2bn) was about a seventh of 2006 alone (£28.8bn).
+3. **AIM gave ground to the Main Market** AIM's share of IPOs fell from 76% to 42% while the Main Market's rose from 17% to 47%.
+4. **The industry mix held** Financials & Real Estate was 42% of IPOs in both 2005 to 2007 and 2022 to 2025, but that is 147 IPOs a year then and 11 now. Basic Materials rose to 18.5% and Health Care peaked at 10.2% in 2020 to 2021, then fell to 3.7%.
 
 
 
