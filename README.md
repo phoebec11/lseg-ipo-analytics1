@@ -40,15 +40,15 @@ The source file starts in June 1995. 1995 to 2004 is excluded, not unavailable. 
 
 
 
-## Significance for UK personal investors
+## Implications for UK personal investors
 
 1. **New listings are small:** The typical IPO now opens at about £20m to £25m, against £67m in the 2010s, and roughly 70% open below £50m. Over 2005 to 2025 the median was £29m on AIM and £100m on the UK Main Market.   
   
-**Use:** Treat a new UK listing as a small-company investment. Compare its opening value with these figures, and check how much of its stock trades before buying, since thin trading and limited public information are the usual risks at this size.  
+**What to consider:** Treat a new UK listing as a small-company investment. Compare its opening value with these figures, and check how much of its stock trades before buying, since thin trading and limited public information are the usual risks at this size.  
 
 2. **A fifth of recent IPOs are funds or other investment vehicles, not operating companies.** 23 of the 108 IPOs in 2022 to 2025 (21%) are in fund or investment-vehicle sectors.   
   
-**Use:** Check a listing's FTSE sector first, so you know whether you are looking at a business or a fund.  
+**What to consider:** Check a listing's FTSE sector first, so you know whether you are looking at a business or a fund.  
 
 
 **New listings are concentrated, so they are a poor guide to UK industries.** In 2022 to 2025, Financials & Real Estate, Basic Materials and Industrials made up 73% of IPOs, while Technology and Health Care together made up 12 of 108.   
