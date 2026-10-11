@@ -37,16 +37,17 @@ The source file starts in June 1995. 1995 to 2004 is excluded, not unavailable. 
 
 *Opening value is missing for 15 of the 108 IPOs in 2022 to 2025, mostly large ones, so the true median is probably £21m to £25m.
 
-1. **Volume collapsed.** 46% of all IPOs since 2005 came in 2005 to 2007. 2024 had 17, the lowest year. 2022 to 2025 runs at 8% to 42% of the IPO rate of any earlier baseline period, so the fall does not depend on which period you compare with.
-2. **The typical IPO is smaller.** The median opening value fell from £66.8m in the 2010s to about £20m to £25m (from £76m to about £26m to £31m if funds and acquisition shells are left out), and total new money in 2022 to 2025 (£4.2bn) was about a seventh of 2006 alone (£28.8bn).
-3. **AIM gave ground to the Main Market.** AIM's share of IPOs fell from 76% to 42% while the Main Market's rose from 17% to 47%.
-4. **The industry share held; what was in it did not.** Financials & Real Estate was 42% of IPOs in both 2005 to 2007 and 2022 to 2025, but that is 147 IPOs a year then and 11 now. In 2022 to 2025, 37 of its 45 IPOs (82%) are funds, trusts or acquisition shells, against 23% to 36% in 2005 to 2007 (the range depends on how the older sector names are counted), so operating financial and property companies listing fell from about 93 a year to 2 a year. Basic Materials rose to 18.5% and Health Care peaked at 10.2% in 2020 to 2021, then fell to 3.7%.
+1. **Volume of IPOs decreased:** 46% of all IPOs since 2005 came in 2005 to 2007. 2024 had 17, the lowest year. 2022 to 2025 runs at 8% to 42% of the IPO rate of any earlier baseline period, so the fall does not depend on which period you compare with.
+2. **The typical IPO is smaller:** The median opening value fell from £66.8m in the 2010s to about £20m to £25m (from £76m to about £26m to £31m if funds and acquisition shells are left out), and total new money in 2022 to 2025 (£4.2bn) was about a seventh of 2006 alone (£28.8bn).
+3. **AIM gave ground to the Main Market:** AIM's share of IPOs fell from 76% to 42% while the Main Market's rose from 17% to 47%.
+4. **The industry proportions held** Financials & Real Estate was 42% of IPOs in both 2005 to 2007 and 2022 to 2025, but that is 147 IPOs a year then and 11 now. In 2022 to 2025, 37 of its 45 IPOs (82%) are funds, trusts or acquisition shells, against 23% to 36% in 2005 to 2007 (the range depends on how the older sector names are counted), so operating financial and property companies listing fell from about 93 a year to 2 a year. Basic Materials rose to 18.5% and Health Care peaked at 10.2% in 2020 to 2021, then fell to 3.7%.
 
 
 
 ## Significance for UK personal investors
 
-1. **New listings are small:** The typical IPO now opens at about £20m to £25m, against £67m in the 2010s, and roughly 70% open below £50m (65% to 72% if funds and acquisition shells are left out). Median opening value by market, in £m:
+1. **New listings are small**
+   The typical IPO now opens at about £20m to £25m, against £67m in the 2010s, and roughly 70% open below £50m (65% to 72% if funds and acquisition shells are left out). Median opening value by market, in £m:
 
 | Market | 2010s, all IPOs | 2010s, excluding funds and shells | 2022 to 2025, all IPOs | 2022 to 2025, excluding funds and shells |
 | --- | --- | --- | --- | --- |
@@ -60,12 +61,14 @@ On the UK Main Market, 28 of the 51 IPOs in 2022 to 2025 are funds or acquisitio
   
 **What to consider:** Treat a new UK listing as a small-company investment. First check whether it is an operating company, a fund or an acquisition shell, then compare its opening value with the table above, and check how much of its stock trades before buying. Academic work on AIM found that most AIM stocks trade infrequently, and that a smaller market value and a smaller free float (the share of stock available to trade) go with wider spreads and more volatile prices ([Board, Villa and Wells, 1998](https://www.fmg.ac.uk/publications/discussion-papers/liquidity-second-tier-equity-markets-evidence-londons-alternative)). That study is old and covers AIM only, and this data has no trading volumes, so it cannot measure this risk.
 
-2. **About a third of recent IPOs are funds, trusts or acquisition shells, not operating companies.** 37 of the 108 IPOs in 2022 to 2025 (34%; between 31% and 35% if the less certain labels go the other way) are in this group: 23 identified by FTSE sector name and 14 more among the listings with no FTSE sector (flagged in `manual_sector_review.csv`). On the UK Main Market it is 28 of 51 (55%). The group mixes genuine funds, trusts and venture capital trusts with cash shells and special purpose acquisition companies (SPACs), which list to buy a business later.
+2. **About a third of recent IPOs are funds, trusts or acquisition shells, not operating companies**
+   37 of the 108 IPOs in 2022 to 2025 (34%; between 31% and 35% if the less certain labels go the other way) are in this group: 23 identified by FTSE sector name and 14 more among the listings with no FTSE sector (flagged in `manual_sector_review.csv`). On the UK Main Market it is 28 of 51 (55%). The group mixes genuine funds, trusts and venture capital trusts with cash shells and special purpose acquisition companies (SPACs), which list to buy a business later.
   
 **What to consider:** Check whether a listing is an operating business, a fund or an acquisition shell before comparing it with others. The FTSE sector name shows many funds, but 40% of 2022 to 2025 IPOs have no FTSE sector, so read what the company says it does.
 
 
-**New listings are concentrated, so they are a poor guide to UK industries.** In 2022 to 2025, Financials & Real Estate, Basic Materials and Industrials made up 73% of IPOs, while Technology and Health Care together made up 12 of 108.   
+3. **New listings are concentrated, so they are a poor guide to UK industries**
+   In 2022 to 2025, Financials & Real Estate, Basic Materials and Industrials made up 73% of IPOs, while Technology and Health Care together made up 12 of 108.   
   
 **What to consider:** Use IPOs to see where new money is going, not to learn UK industries. Learn those from the established market.
 
@@ -81,9 +84,9 @@ On the UK Main Market, 28 of the 51 IPOs in 2022 to 2025 are funds or acquisitio
 
 ## Data
 
-**Source:** London Stock Exchange "New Issues and IPOs" statistics, downloaded from [LSE reports](https://www.londonstockexchange.com/reports?tab=issuers) on [ADD: download date].
+**Source:** London Stock Exchange "New Issues and IPOs" statistics, downloaded from [LSE reports](https://www.londonstockexchange.com/reports?tab=issuers) on 5th October 2026
 
-**The LSEG data is not included in this repository**, because I have not confirmed that LSEG permits redistribution. This also applies to the cleaned file derived from it (`new_issues.csv`), so `load_db.py` and the notebook cannot be re-run from a fresh clone. The notebook is saved with its outputs and charts, so the results can be read without re-running it. The cleaning steps are described below.
+The LSEG data is not included in this repository, because I have not confirmed that LSEG permits redistribution. This also applies to the cleaned file derived from it (`new_issues.csv`), so `load_db.py` and the notebook cannot be re-run from a fresh clone. The notebook is saved with its outputs and charts, so the results can be read without re-running it. The cleaning steps are described below.
 
 
 | File                            | What it is                                                                                                                                           | Rows |
@@ -121,7 +124,7 @@ I used Claude (Anthropic's AI assistant) in this project, specifically for the f
 - **Labelling the 107 blank-sector listings:** Claude assigned each company an industry group. I told it which sources to use (the company's website, its LSE page or Wikipedia) and I checked every one against its source. The sources and the other group considered are recorded in `manual_sector_review.csv`.
 - In `sector_map.csv` : Claude helped me map the 95 sector labels to 9 groups. My instruction was: "match the sector labels to the 9 types". 
 - In`load_db.py`**:** This is my first time validating data types and completeness, so I used Claude as a learning tool: to understand what to check and to give feedback on my ideas for how to structure it, for example building each step as a function and adding logs. 
-- **Notebook and README.** Claude helped revise the notebook and write and edit the README text, and helped write the cells that count funds and acquisition vehicles. The Excel cleaning, the choice of questions and the original SQL queries are original.
+- Claude helped revise the notebook and write and edit the README text, and helped write the cells that count funds and acquisition vehicles. The Excel cleaning, the choice of questions and the original SQL queries are original.
 
 
 
@@ -129,9 +132,9 @@ I used Claude (Anthropic's AI assistant) in this project, specifically for the f
 
 ### 1. Cleaning in Excel
 
-- **Issue types harmonised.** The raw LSEG issue types (13 across the whole file, 11 from 2005) were mapped onto 4 categories with `XLOOKUP`. For example, `New Company Placing`, `Offer for Subscription - New Company` and `International Offering (GDR)` all become `New admission`. The mapping is validated from 2005 (see Why 2005 to 2025).
-- **Industry groups assigned.** Each FTSE sector label in the data (95 distinct labels) was mapped to one of nine broad industry groups, based on the sector name, plus a small `Non-company security` category. The mapping is in `sector_map.csv`.
-- **Missing sectors labelled.** 107 listings had no FTSE sector. Each was assigned an industry group, and flagged as a fund, trust or acquisition vehicle or not, using a source I specified, with what the company does and the URL recorded in `manual_sector_review.csv` (see AI assistance in the project).
+- **Harmonising Issue Types** The raw LSEG issue types (13 across the whole file, 11 from 2005) were mapped onto 4 categories with `XLOOKUP`. For example, `New Company Placing`, `Offer for Subscription - New Company` and `International Offering (GDR)` all become `New admission`. The mapping is validated from 2005 (see Why 2005 to 2025).
+- **Creating Industry Groups .** Each FTSE sector label in the data (95 distinct labels) was mapped to one of nine broad industry groups, based on the sector name, plus a small `Non-company security` category. The mapping is in `sector_map.csv`.
+- **Labelled missing sectors .** 107 listings had no FTSE sector. Each was assigned an industry group, and flagged as a fund, trust or acquisition vehicle or not, using a source I specified, with what the company does and the URL recorded in `manual_sector_review.csv` (see AI assistance in the project).
 - **Pivot tables** cross-checked counts by year, month, market and sector before export.
 
 
@@ -140,14 +143,16 @@ I used Claude (Anthropic's AI assistant) in this project, specifically for the f
 
 The database is built only if every check passes:
 
-- **Shape of the export.** All required columns are present, there are exactly 6,251 rows, and no duplicate listings.
-- **Excel export artefacts repaired:**
+- All required columns are present, there are exactly 6,251 rows, and no duplicate listings.
+- Excel export artefacts repaired:
   - 1,786 empty columns are dropped, after confirming they hold no data.
   - Dates are parsed and stored as `yyyy-mm-dd`.
   - In money columns, thousands separators are removed and `-` becomes NULL.
-- **Known values only.** Market, IPO flag and industry group contain only expected values, so a misspelling cannot silently drop rows from a filter.
-- **One category per issue type.** Each raw issue type must map to exactly one harmonised category. This catches a lookup applied to the wrong rows.
-- **The published lookups match the data.** The industry group in the data agrees with `sector_map.csv` for every listing that has a sector label. Every listing in `manual_sector_review.csv` matches one row, carries the group used in the data and has an evidence URL, and every blank-sector listing in the analysis is covered.
+- Market, IPO flag and industry group contain only expected values, so a misspelling cannot silently drop rows from a filter.
+- One category per issue type:
+  - Each raw issue type must map to exactly one harmonised category. This catches a lookup applied to the wrong rows.
+- The published lookups match the data
+  - The industry group in the data agrees with `sector_map.csv` for every listing that has a sector label. Every listing in `manual_sector_review.csv` matches one row, carries the group used in the data and has an evidence URL, and every blank-sector listing in the analysis is covered.
 
 It writes to a temporary file and swaps it into place, so a failed run leaves the existing database untouched. A `load_metadata` table records the SHA-256 hash of each source file, so every result can be traced to an exact export.
 
