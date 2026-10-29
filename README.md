@@ -6,11 +6,11 @@ An SQL and Python analysis of 2,282 IPOs on the London Stock Exchange (LSE) from
 
 ## Why this personal project?
 
-I am interested in personal investing, and in the UK stock market in particular. Before looking at individual shares, I wanted to understand the supply of new UK-listed companies: how many list, on which market, in which industries, how big they are and how much they raise. That tells me what a private investor can realistically find among new listings, and how much of it is small, concentrated or cyclical. It also shows which industries have been bringing companies to market at different points in the cycle, which is a way to learn about industries.
+I am interested in personal investing, and in the UK stock market in particular. Before looking at individual shares, I wanted to understand the supply of UK listed companies and how it changes over time. I looked at how many list, on which market, in which industries, how big they are and how much they raise. That tells me what a private investor can realistically find among new listings, and how much of it is small, concentrated or cyclical. They also show which industries have been bringing companies to market at different points in the cycle, which is a way to learn about industries.
 
 This is background, not a stock-picking signal. The data has no share prices, returns, valuations or trading volumes, so it says nothing about how the companies performed after they listed. Nothing here is investment advice.
 
-**What this can and cannot show.** It describes IPOs in London only. It cannot show whether London is a leading European listing venue, because that needs IPO data from other exchanges and this dataset has none. A fall in London IPOs could reflect a global slowdown, companies listing elsewhere, or both.
+ My project only involves London IPOs, so it cannot show whether London is a leading European listing venue, because that needs IPO data from other exchanges and this dataset has none. A fall in London IPOs could reflect a global slowdown, companies listing elsewhere, or both.
 
 
 
@@ -24,7 +24,7 @@ The source file starts in June 1995. 1995 to 2004 is excluded, not unavailable. 
 
 ## Headline findings
 
-**London's IPO market is much smaller than it was: 27 IPOs a year in 2022 to 2025, against 349 in 2005 to 2007, and the typical IPO opens at about a third of the 2010s size.**
+**London's IPO market is much smaller than it was: averaging 27 IPOs a year in 2022 to 2025, against 349 in 2005 to 2007, and the typical IPO opens at about a third of the 2010s size.**
 
 
 |                                                       | 2005 to 07 | 2008 to 09 | 2010 to 19 | 2020 to 21 | 2022 to 25 |
