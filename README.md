@@ -42,6 +42,13 @@ The source file starts in June 1995. 1995 to 2004 is excluded, not unavailable. 
 3. **AIM gave ground to the Main Market:** AIM's share of IPOs fell from 76% to 42% while the Main Market's rose from 17% to 47%.
 4. **The industry proportions remained similar throughout** Financials & Real Estate was 42% of IPOs in both 2005 to 2007 and 2022 to 2025, but that is 147 IPOs a year then and 11 now. In 2022 to 2025, 37 of its 45 IPOs (82%) are funds, trusts or acquisition shells, against 23% to 36% in 2005 to 2007 (the range depends on how the older sector names are counted), so operating financial and property companies listing fell from about 93 a year to 2 a year. Basic Materials rose to 18.5% and Health Care peaked at 10.2% in 2020 to 2021, then fell to 3.7%.
 
+## Macroeconomic explanations 
+
+The fall in new issues on the London Stock Exchange may be related to several macroeconomic and structural factors, although this dataset cannot test them, and UK GDP growth alone is unlikely to explain it. 
+
+First, interest rates may help explain the timing of the 2021 peak and the fall after it, but not the longer decline, as Bank Rate was also low through much of 2009 to 2019 while issuance did not rise. The UK Bank Rate was cut to 0.1% in March 2020, held there until December 2021, then raised to 5.25% by August 2023, and the database records 126 new IPOs in 2021 against 17 in 2024, a fall of about 87%. Cheap money may open the issuance window and tightening may close it, but the Bank Rate was also low through much of 2009 to 2019 without a matching rise in issuance, so low borrowing costs alone were not enough to encourage companies to raise capital by listing in London. 
+
+Second, the ONS reports that pension and insurance funds held 4.2% of UK quoted shares in 2022, down from 45.7% in 1997, and LSEG’s analysis shows the US forward P/E premium over the UK rising since 2016 and peaking near 2x. A shrinking domestic buyer base may be one reason UK valuations lag, giving issuers a reason to list elsewhere, but this link is an assumption not tested here. Because both are slow-moving, they are background conditions that are unlikely to explain year-to-year swings, which rates and risk appetite may help to time.
 
 
 ## Significance for UK personal investors
@@ -281,3 +288,5 @@ Phoebe Chan. MSc Business Analytics and AI, Warwick Business School
 [https://www.londonstockexchange.com/reports?tab=issuers](https://www.londonstockexchange.com/reports?tab=issuers) 
 
 [https://www.londonstockexchange.com/raise-finance/equity/aim](https://www.londonstockexchange.com/raise-finance/equity/aim)
+
+https://www.bankofengland.co.uk/boeapps/database/Bank-Rate.asp 
